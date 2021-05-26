@@ -9,6 +9,10 @@ API_ID - Go to https://my.telegram.org for getting it and add it to secrets
 API_HASH - Go to https://my.telegram.org for getting it and add it to secrets
 BOT_TOKEN - Create it with help of Bot Father
 LOGGING_CHANNEL - Give your bot permission in Logging channel and get ID of the channel begins with -
+
+
+### Deploy in Heroku
+[Deploy](https://heroku.com/deploy)
 ### Thank You Note:
 - [Developer of Cat as a Service](https://cataas.com/#/)
 - [Pyrogram] (https://github.com/pyrogram)
