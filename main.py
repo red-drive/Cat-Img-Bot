@@ -20,8 +20,8 @@ def uploader():
     urllib.request.urlretrieve(url="https://cataas.com/cat",filename="IMG/cat.jpg")
     for user in chitchat_users:
         app.send_photo(chat_id=user,photo="IMG/cat.jpg")
-        print(user)
-    print(chitchat_users)
+        # print(user)
+    # print(chitchat_users)
 
 def cat_imager():
     global send_pics
@@ -43,8 +43,8 @@ def start_command(client,message):
     global chitchat,user_name,send_pics
     chitchat = message['chat']['id']
     user_name = message['chat']['username']
-    print("\nHey Welcome use ",user_name)
-    print("\nHaving id of ",chitchat)
+    # print("\nHey Welcome use ",user_name)
+    # print("\nHaving id of ",chitchat)
     # app.send_message(chat_id=os.environ['LOGGING_CHANNEL'],text="We got a new user "+ str(chitchat))
     send_pics = 1
     chitchat_users.append(chitchat)
