@@ -24,10 +24,5 @@
         "LOGGING_CHANNEL": {
             "description": "Give your bot permission in Logging channel and get ID of the channel begins with -"
         }
-    },
-    "buildpacks": [
-        {
-            "url": "https://github.com/stomita/heroku-buildpack-phantomjs"
-        }
-    ]  
+    }
 }
