@@ -45,10 +45,7 @@ def start_command(client,message):
     user_name = message['chat']['username']
     print("\nHey Welcome use ",user_name)
     print("\nHaving id of ",chitchat)
-    try:
-        app.send_message(chat_id=os.environ['LOGGING_CHANNEL'],text="We got a new user "+ str(chitchat))
-    except:
-        print("Please add your channel to log informations")
+    app.send_message(chat_id=os.environ['LOGGING_CHANNEL'],text="We got a new user "+ str(chitchat))
     send_pics = 1
     chitchat_users.append(chitchat)
     app.send_message(chat_id=chitchat,text="Hey "+user_name+" You have started the Cat Image Bot will sent you cat Image from now every 10 mins.")
@@ -59,10 +56,12 @@ def stop_command(client,message):
     global stchitchat,send_pics
     stchitchat = message['chat']['id']
     app.send_message(chat_id=stchitchat,text="Thank You for Using our service...")
-    try:
-        app.send_message(chat_id=os.environ['LOGGING_CHANNEL'],text="We lost a user "+ str(chitchat))
-    except:
-        print("Please add your channel to log informations")
+    app.send_message(chat_id=os.environ['LOGGING_CHANNEL'],text="We lost a user "+ str(chitchat))
     chitchat_users.remove(stchitchat)
+
+@app.on_message(filters.command("source"))
+def source(client,message):
+    source_request = message['chat']['id']
+    app.send_message(source_request,"[GitHub]('https://github.com/red-drive/Cat-Img-Bot.git')")
 
 app.run()
