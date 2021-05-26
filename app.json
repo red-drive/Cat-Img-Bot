@@ -1,0 +1,30 @@
+{
+    "name": "Cat Image Bot",
+    "description": "This is a Telegram Bot Send Photo of cats every 10 mins",
+    "keywords": [
+        "cat-lover",
+        "catbot",
+        "telegram",
+        "pyrogram"
+    ],
+    "repository": "https://github.com/red-drive/Cat-Img-Bot.git", 
+    "env": {
+        "SESSION_STRING": {
+            "description": "Generate Session String and add to heroku or secrets"
+        },
+        "API_ID": {
+            "description": "Go to https://my.telegram.org for getting it"
+        },
+        "API_HASH": {
+            "description": "Go to https://my.telegram.org for getting it"
+        },
+        "BOT_TOKEN": {
+            "description": " Create it with help of BotFather"
+        },
+        "LOGGING_CHANNEL": {
+            "description": "Give your bot permission in Logging channel and get ID of the channel begins with -"
+        }
+
+
+    }
+}
