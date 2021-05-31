@@ -15,4 +15,4 @@ LOGGING_CHANNEL - Give your bot permission in Logging channel and get ID of the 
 [Deploy](https://heroku.com/deploy)
 ### Thank You Note:
 - [Developer of Cat as a Service](https://cataas.com/#/)
-- [Pyrogram] (https://github.com/pyrogram)
+- [Pyrogram](https://github.com/pyrogram)
